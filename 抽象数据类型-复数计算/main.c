@@ -9,23 +9,23 @@
 int main(int argc, char *argv[])
 {
 	Complex		Complex_1, 
-				Complex_2,
-				Complex_sum,
-				Complex_sub,
-				Complex_mul,
-				Complex_dev; 
+			Complex_2,
+			Complex_sum,
+			Complex_sub,
+			Complex_mul,
+			Complex_dev; 
 	
-	//¸ø¸´Êı¸³Öµ
+	//ç»™å¤æ•°èµ‹å€¼
 	Complex_Create(&Complex_1, 2.0, 2.0); 
 	Complex_Create(&Complex_2, 4.0, 3.0);
 
-	//¼Ó¼õ³Ë³ıÔËËã 
+	//åŠ å‡ä¹˜é™¤è¿ç®— 
 	Complex_sum = Complex_Add(Complex_1, Complex_2);
 	Complex_sub = Complex_Sub(Complex_1, Complex_2);
 	Complex_mul = Complex_Mul(Complex_1, Complex_2);
 	Complex_dev = Complex_Dev(Complex_1, Complex_2);
 	
-	//Êä³ö¼Ó¡¢¼õ¡¢³Ë¡¢³ı¡¢Ä£³¤¡¢Ïà½Ç 
+	//è¾“å‡ºåŠ ã€å‡ã€ä¹˜ã€é™¤ã€æ¨¡é•¿ã€ç›¸è§’ 
 	printf("%.2f+(%.2f)i\n", Complex_Get_Re(Complex_sum), Complex_Get_Im(Complex_sum));
 	printf("%.2f+(%.2f)i\n", Complex_Get_Re(Complex_sub), Complex_Get_Im(Complex_sub));
 	printf("%.2f+(%.2f)i\n", Complex_Get_Re(Complex_mul), Complex_Get_Im(Complex_mul));
